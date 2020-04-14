@@ -1,5 +1,7 @@
 <?php
 
+namespace edrard\Atx;
+
 /**
  * Based on: http://stackoverflow.com/questions/99350/passing-php-associative-arrays-to-and-from-xml
  */
@@ -79,7 +81,7 @@ class ArrayToXML
                 }else if($key[0] == "!"){
                     if (is_array($val)) $nonAttributes = $val;
                     else $xml->writeCData($val);
-                } 
+                }
                 //ignore normal elements
                 else $nonAttributes[$key] = $val;
             }

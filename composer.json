@@ -1,0 +1,19 @@
+{
+    "name": "edrard/arraytoxml",
+    "description": "Simple Lib for converting Array to XML",
+    "type": "library",
+    "homepage": "https://github.com/Edrard/array2xml",
+    "license": "MIT",
+    "authors": [{
+        "name": "Edrard",
+        "email": "demonand@gmail.com"
+    }],
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "edrard\\Log\\": "src/Atx"
+        }
+    }
+}
