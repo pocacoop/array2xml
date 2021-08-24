@@ -1,31 +1,33 @@
 <?php
 
-namespace Pocacoop\Atx;
+namespace Pocacoop;
+
+use XMLWriter;
 
 /**
  * Based on: http://stackoverflow.com/questions/99350/passing-php-associative-arrays-to-and-from-xml
  */
-class ArrayToXML
+class Array2XML
 {
-    private $version;
-    private $encoding;
+  private $version;
+  private $encoding;
 
-    /**
-     * Construct ArrayToXML object with selected version and encoding
-     *
-     * for available values check XmlWriter docs http://www.php.net/manual/en/function.xmlwriter-start-document.php
-     * @param string $xmlVersion XML Version, default 1.0
-     * @param string $xmlEncoding XML Encoding, default UTF-8
-     */
-    public function __construct($xmlVersion = '1.0', $xmlEncoding = 'UTF-8')
-    {
-        $this->version = $xmlVersion;
-        $this->encoding = $xmlEncoding;
-    }
+  /**
+   * Construct ArrayToXML object with selected version and encoding
+   *
+   * for available values check XmlWriter docs http://www.php.net/manual/en/function.xmlwriter-start-document.php
+   * @param string $xmlVersion XML Version, default 1.0
+   * @param string $xmlEncoding XML Encoding, default UTF-8
+   */
+  public function __construct($xmlVersion = '1.0', $xmlEncoding = 'UTF-8')
+  {
+    $this->version = $xmlVersion;
+    $this->encoding = $xmlEncoding;
+  }
 
-    /**
-     * Build an XML Data Set
-     *
+  /**
+   * Build an XML Data Set
+   *
      * @param array $data Associative Array containing values to be parsed into an XML Data Set(s)
      * @param string $startElement Root Opening Tag, default data
      * @return string XML String containing values
