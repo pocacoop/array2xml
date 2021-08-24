@@ -1,5 +1,5 @@
 {
-    "name": "edrard/array2xml",
+    "name": "pocacoop/array2xml",
     "description": "Simple Lib for converting Array to XML",
     "type": "library",
     "homepage": "https://github.com/Edrard/array2xml",
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "edrard\\Log\\": "src/Atx"
+            "pocacoop": "src"
         }
     }
 }
