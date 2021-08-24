@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "pocacoop": "src"
+            "Pocacoop\\A2x": "src\Atx"
         }
     }
 }
